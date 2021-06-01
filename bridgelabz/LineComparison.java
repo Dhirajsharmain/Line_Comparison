@@ -31,18 +31,18 @@ public class LineComparison {
     
         //Comparing using compareTo method
         Float obj1 = firstLineLength;
-	    Float obj2 = secondLineLength;
+        Float obj2 = secondLineLength;
 	    
-	    int comparevalue = Float.compare(obj1, obj2);
-	    
-	    if (comparevalue == 0) {
-		System.out.println("Both the line are equal.");
+        int comparevalue = Float.compare(obj1, obj2);
+        
+	    if (comparevalue == 0){
+	    	System.out.println("Both the line are equal.");
 			}
 	    else if (comparevalue > 0){
-		System.out.println("The first line is greater than the second line.");
-		}
+	    	System.out.println("The first line is greater than the second line.");
+	    	}
 	    else{
-		System.out.println("The second line is greater than first line.");
-		}
+	    	System.out.println("The second line is greater than first line.");
+	    	}
     }
 }
