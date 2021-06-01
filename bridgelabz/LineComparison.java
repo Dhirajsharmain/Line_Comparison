@@ -35,7 +35,7 @@ public class LineComparison {
 	    
         int comparevalue = Float.compare(obj1, obj2);
         
-	    if (comparevalue == 0){
+        if (comparevalue == 0){
 	    	System.out.println("Both the line are equal.");
 			}
 	    else if (comparevalue > 0){
