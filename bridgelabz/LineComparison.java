@@ -1,4 +1,4 @@
-//Welcome on line comparison Problem of cartesian system
+//Welcome on line comparison Problem of Cartesian system
 package bridgelabz;
 
 import java.util.Scanner;
@@ -24,6 +24,16 @@ public class LineComparison {
         a2 = scanner.nextFloat();
         System.out.println("Enter the value of a point b2:");
         b2 = scanner.nextFloat();
-        System.out.println("(x1,y1)=" +x1+"," +y1 + " (x2,y2)="+x2+","+y2 + " (a1,b1)=" +a1+","+b1 + " (a2,b2)="+a2+","+b2);
+        float firstLineLength =(float) Math.sqrt(Math.pow(x2-x1, 2) + (Math.pow(y2-y1,  2)));
+        float secondLineLength =(float) Math.sqrt(Math.pow(a2-a1, 2) + (Math.pow(b2-b1, 2)));
+        System.out.println("The length of a line is:" + firstLineLength);
+        System.out.println("The length of a line is:" + secondLineLength);
+    
+        if (firstLineLength == secondLineLength)
+		    System.out.println("Line is Equal");
+        else
+		    System.out.println("Line is Not Equal");
+        
+        scanner.close();
     }
 }
