@@ -37,12 +37,12 @@ public class LineComparison {
         
         if (comparevalue == 0){
 	    	System.out.println("Both the line are equal.");
-			}
-	    else if (comparevalue > 0){
-	    	System.out.println("The first line is greater than the second line.");
 	    	}
-	    else{
-	    	System.out.println("The second line is greater than first line.");
-	    	}
+        else if (comparevalue > 0){
+        	System.out.println("The first line is greater than the second line.");
+        	}
+        else{
+        	System.out.println("The second line is greater than first line.");
+        	}
     }
 }
