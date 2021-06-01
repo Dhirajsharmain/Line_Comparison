@@ -29,11 +29,20 @@ public class LineComparison {
         System.out.println("The length of a line is:" + firstLineLength);
         System.out.println("The length of a line is:" + secondLineLength);
     
-        if (firstLineLength == secondLineLength)
-		    System.out.println("Line is Equal");
-        else
-		    System.out.println("Line is Not Equal");
-        
-        scanner.close();
+        //Comparing using compareTo method
+        Float obj1 = firstLineLength;
+	    Float obj2 = secondLineLength;
+	    
+	    int comparevalue = Float.compare(obj1, obj2);
+	    
+	    if (comparevalue == 0) {
+		System.out.println("Both the line are equal.");
+			}
+	    else if (comparevalue > 0){
+		System.out.println("The first line is greater than the second line.");
+		}
+	    else{
+		System.out.println("The second line is greater than first line.");
+		}
     }
 }
